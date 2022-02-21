@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>popup</title>
+	<style>
+		body,
+		.container {
+			width: 720px;
+			height: 320px;
+		}
+		.container {
+			width: 100%;
+			height: 100%;
+			display: flex;
+		}
+		.cnt-left{
+			flex:3;
+			background: red;
+		}
+		.cnt-right{
+			flex:3;
+		}
+		.color-grey {
+			color: #999;
+		}
+		.summary{
+			overflow: auto;
+		}
+		.summary-item{
+			float: left;
+			width: 110px;
+			height: 80px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="cnt-left">
+			<img id="bg_page_screenshot" src="" width="100%" height="100%" alt="">
+		</div>
+		<div class="cnt-right">
+			<h3>概述</h3>
+			<div class="summary">
+				<div class="summary-item">
+					<div class="summary-tt color-grey ">本页产品总数量</div>
+					<div class="summary-val">111</div>
+				</div>
+				<div class="summary-item">
+					<div class="summary-tt color-grey ">本页产品最高价格</div>
+					<div class="summary-val">111</div>
+				</div>
+				<div class="summary-item">
+					<div class="summary-tt color-grey ">本页产品最低价格</div>
+					<div class="summary-val">111</div>
+				</div>
+			</div>
+			<h3>详情</h3>
+			<p class="color-grey ">本页产品中最高加个的产品</p>
+			<div class="details">
+				<ul class="goods-list">
+					<li class="goods-item">
+						<div class="goods-tt"></div>
+						<div> 
+							<span class="color-grey ">Price:(USA)</span>111
+						</div>
+					</li>
+				</ul>	
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+	<script type="text/javascript" src="js/popup.js"></script>
+</body>
+</html>
